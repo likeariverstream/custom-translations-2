@@ -1,0 +1,39 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run postinstall && node app.js",
+    "postinstall": "npx link-module-alias",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "_moduleAliases": {
+    "~base-classes": "./base-classes",
+    "~components": "./components",
+    "~errors": "./errors",
+    "~libs": "./libs",
+    "~middlewares": "./middlewares",
+    "~utils": "./utils"
+  },
+  "keywords": [],
+  "author": "Sergey Kalachev",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "config": "^3.3.11",
+    "date-fns": "^3.3.1",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "link-module-alias": "^1.2.0",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin-js": "^1.6.2",
+    "eslint": "^8.57.0"
+  }
+}
